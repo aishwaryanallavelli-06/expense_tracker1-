@@ -38,22 +38,38 @@ if menu == "Home":
 
     st.title("💰 Personal Expense Tracker")
 
+    st.markdown("""
+    ### Welcome!
+    Welcome to your personal expense tracker. This app is designed to help you gain clarity on your spending,
+    save more effectively, and make confident financial decisions.
+    """)
+
     st.subheader("Track Your Income and Expenses Easily")
 
     st.write("""
     This application helps users manage their finances by:
 
-    ✅ Adding income details  
-    ✅ Adding expense details  
-    ✅ Viewing transaction history  
-    ✅ Calculating total income  
-    ✅ Calculating total expenses  
-    ✅ Displaying remaining balance  
-    ✅ Showing category-wise expense summary
+    - Adding income details  
+    - Adding expense details  
+    - Viewing transaction history  
+    - Calculating total income  
+    - Calculating total expenses  
+    - Displaying remaining balance  
+    - Showing category-wise expense summary
+
+    Use this tool to keep better track of where your money is going, set realistic budgets, and review your spending habits regularly.
     """)
 
-    st.info("Use the sidebar to navigate through the application.")
+    st.markdown(
+        """
+        ### How to get started
+        1. Go to **Add Transaction** and enter your income and expenses.
+        2. Check **View Transactions** to review all entries.
+        3. Visit **Summary** to see totals and expense trends.
+        """
+    )
 
+    st.info("Use the sidebar to navigate through the application and update your budget regularly.")
 # ---------------------------------------------------
 # ADD TRANSACTION PAGE
 # ---------------------------------------------------
